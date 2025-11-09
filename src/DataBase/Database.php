@@ -8,9 +8,9 @@ class Database {
     public PDO $pdo;
     public function __construct() {
         try {
-            $dsn = 'mysql:host=127.0.0.1;dbname=jobboard';
-            $user = 'unearned';
-            $password = '021271';
+            $dsn = 'mysql:host=db;dbname=jobboard;charset=utf8mb4';
+            $user = 'user';
+            $password = 'pass';
             $options = [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
